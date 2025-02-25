@@ -1,0 +1,261 @@
+/* General Styles */
+Body {
+    Font-family: Arial, sans-serif;
+    Margin: 0;
+    Padding: 0;
+    Background-color: #f4f4f4;
+    Color: #333;
+}
+
+Header {
+    Background-color: #007BFF;
+    Color: #fff;
+    Padding: 10px 0;
+    Text-align: center;
+}
+
+Header .logo img {
+    Height: 50px;
+}
+
+Nav ul {
+    List-style: none;
+    Padding: 0;
+    Margin: 0;
+    Display: flex;
+    Justify-content: center;
+    Background-color: #333;
+}
+
+Nav ul li {
+    Margin: 0 15px;
+}
+
+Nav ul li a {
+    Color: #fff;
+    Text-decoration: none;
+    Padding: 10px 15px;
+    Display: block;
+}
+
+Nav ul li a:hover {
+    Background-color: #007BFF;
+    Border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    Background-color: #007BFF;
+    Color: #fff;
+    Padding: 50px 20px;
+    Text-align: center;
+}
+
+.hero h1 {
+    Margin: 0;
+    Font-size: 2.5em;
+}
+
+.hero p {
+    Font-size: 1.2em;
+    Margin-top: 10px;
+}
+
+/* Sections */
+Section {
+    Padding: 20px;
+    Text-align: center;
+}
+
+Section h1, section h2 {
+    Color: #f1f3f5;
+}
+
+/* Registration Form */
+.registration {
+    Max-width: 600px;
+    Margin: 0 auto;
+    Padding: 20px;
+    Background-color: #fff;
+    Border-radius: 10px;
+    Box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration form {
+    Display: flex;
+    Flex-direction: column;
+}
+
+.registration label {
+    Margin: 10px 0 5px;
+    Font-weight: bold;
+}
+
+.registration input,
+.registration select,
+.registration textarea {
+    Padding: 10px;
+    Margin-bottom: 15px;
+    Border: 1px solid #ccc;
+    Border-radius: 5px;
+    Font-size: 1em;
+}
+
+.registration button {
+    Background-color: #007BFF;
+    Color: #fff;
+    Padding: 10px 20px;
+    Border: none;
+    Border-radius: 5px;
+    Cursor: pointer;
+    Font-size: 1em;
+}
+
+.registration button:hover {
+    Background-color: #0056b3;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 10px 15px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-height: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:focus-within .dropdown-content {
+    display: block;
+}
+
+.dropdown.active .dropdown-content {
+    display: block;
+}
+
+/* Members Table */
+.members {
+    Max-width: 1000px;
+    Margin: 0 auto;
+    Padding: 20px;
+    Background-color: #fff;
+    Border-radius: 10px;
+    Box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+Table {
+    Width: 100%;
+    Border-collapse: collapse;
+    Margin: 20px 0;
+}
+
+Table, th, td {
+    Border: 1px solid #ddd;
+}
+
+Th, td {
+    Padding: 12px;
+    Text-align: left;
+}
+
+Th {
+    Background-color: #007BFF;
+    Color: white;
+}
+
+Tr:nth-child(even) {
+    Background-color: #f2f2f2;
+}
+
+Tr:hover {
+    Background-color: #ddd;
+}
+
+/* Events Section */
+.event {
+    Background-color: #fff;
+    Margin: 20px auto;
+    Padding: 20px;
+    Width: 80%;
+    Border-radius: 10px;
+    Box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.event h3 {
+    Color: #007BFF;
+    Margin-top: 0;
+}
+
+/* Footer */
+Footer {
+    Background-color: #333;
+    Color: #fff;
+    Text-align: center;
+    Padding: 10px 0;
+    Position: relative;
+    Bottom: 0;
+    Width: 100%;
+    Margin-top: 20px;
+}
+
+Footer p {
+    Margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    Nav ul {
+        Flex-direction: column;
+    }
+
+    Nav ul li {
+        Margin: 5px 0;
+    }
+
+    .hero h1 {
+        Font-size: 2em;
+    }
+
+    .hero p {
+        Font-size: 1em;
+    }
+
+    .registration, .members {
+        Padding: 10px;
+    }
+
+    Table, th, td {
+        Font-size: 0.9em;
+    }
+}
+
